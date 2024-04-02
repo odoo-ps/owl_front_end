@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="owl_lu.CategByPartner">
+        <!-- <Categories t-props="props"/> -->
+        <ul t-foreach="props.categories" t-as="categ" t-key="data_index">
+            <li> <a t-out="categ.name"/></li>
+        </ul>
+    </t>
+</templates>

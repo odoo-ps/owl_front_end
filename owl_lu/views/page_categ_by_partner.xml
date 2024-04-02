@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="categ_by_partenr_page" name="Categories by partners">
+        <t t-call="website.layout">
+            <owl-component name="owl_lu.CategByPartner" 
+                t-att-props="json.dumps({
+                    'categories': categories,
+                })"
+            />
+        </t>
+    </template>
+</odoo>
